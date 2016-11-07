@@ -23,4 +23,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ![enter description here][1]
 
 
-  [1]: ./images/QQ%E6%88%AA%E5%9B%BE20161107173245.png "QQ截图20161107173245.png"
+  [1]: ./images_readme/test.png 
+  "QQ截图20161107173245.png"
