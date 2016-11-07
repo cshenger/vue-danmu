@@ -1,0 +1,97 @@
+html{
+  font-size: 10px;
+}
+
+body{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,Microsoft Yahei,sans-serif;
+}
+
+.danmu{
+  width: 100%;
+  height: 100vh;
+}
+
+.main{
+  width: 100%;
+  height: 90%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.main .main_dan{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+.main .main_dan div{
+  height: 9.9%;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.main .main_dan span{
+  position: absolute;
+  display: block;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 2;
+  text-shadow: 2px 2px 5px #000;
+  transform: translateX(inherit);
+  right: inherit;
+  opacity: 0.5;
+}
+
+.main .main_dan span.move{
+  -webkit-animation: move 7s infinite;
+  animation: move 7s infinite;
+}
+
+@-webkit-keyframes move {
+  /*0% {transform: translateX(50vw);}*/
+  50% {transform: translateX(-70vw); opacity: 1;}
+  100% {transform: translateX(-150vw); opacity: 0.5;}
+}
+
+@keyframes move {
+  /*0% {transform: translateX(50vw);}*/
+  50% {transform: translateX(-70vw); opacity: 1;}
+  100% {transform: translateX(-150vw); opacity: 0.5;}
+}
+
+.prompt{
+  width: 100%;
+  height: 10%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-alifn-center: center;
+  align-content: center;
+}
+
+.prompt input[type="text"]{
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  flex: 5;
+  padding: 5px 10px;
+  font-size: 3rem;
+}
+
+.prompt button{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  font-size: 3rem;
+  color: #fff;
+  border: none;
+  background: -webkit-linear-gradient(#104E8B,#36648B);
+  background: linear-gradient(#104E8B,#36648B);
+  cursor: pointer;
+}
